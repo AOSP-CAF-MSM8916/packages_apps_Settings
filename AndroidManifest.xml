@@ -3351,7 +3351,19 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".fuelgauge.batterytip.AnomalyCleanupJobService"
+       <activity android:name=".Settings$GamingModeActivity"
+            android:label="@string/gaming_mode_title"
+            android:taskAffinity="com.android.settings"
+            android:parentActivityName="Settings">
+            <intent-filter android:priority="1">
+                <action android:name="android.settings.GAMING_MODE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+     		 <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.teamone.additions.fragments.GamingMode" />  
+       </activity>
+
+	 <service android:name=".fuelgauge.batterytip.AnomalyCleanupJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <service android:name=".fuelgauge.batterytip.AnomalyConfigJobService"

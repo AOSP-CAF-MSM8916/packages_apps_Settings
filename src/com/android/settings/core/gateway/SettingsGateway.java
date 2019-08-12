@@ -23,6 +23,7 @@ import com.android.settings.IccLockSettings;
 import com.android.settings.MasterClear;
 import com.android.settings.PrivacySettings;
 import com.android.settings.Settings;
+import com.android.settings.Settings.GamingModeActivity;
 import com.android.settings.TestingSettings;
 import com.android.settings.TetherSettings;
 import com.android.settings.TrustedCredentialsSettings;
@@ -137,6 +138,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.tether.WifiTetherSettings;
+import com.teamone.additions.fragments.GamingMode;
 
 public class SettingsGateway {
 
@@ -262,7 +264,8 @@ public class SettingsGateway {
             DataUsageList.class.getName(),
             DirectoryAccessDetails.class.getName(),
             ToggleBackupSettingFragment.class.getName(),
-            PreviouslyConnectedDeviceDashboardFragment.class.getName(),
+            GamingMode.class.getName(),
+	    PreviouslyConnectedDeviceDashboardFragment.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -301,5 +304,6 @@ public class SettingsGateway {
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.MyDeviceInfoActivity.class.getName(),
+	    Settings.GamingModeActivity.class.getName(),
     };
 }

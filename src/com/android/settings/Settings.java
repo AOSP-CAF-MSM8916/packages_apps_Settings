@@ -168,4 +168,6 @@ public class Settings extends SettingsActivity {
     public static class SupportDashboardActivity extends SettingsActivity {}
     public static class SMQQtiFeedbackActivity extends SettingsActivity { /* empty */ }
 
+    // Gaming Mode
+    public static class GamingModeActivity extends SettingsActivity { /* empty */ }
 }
