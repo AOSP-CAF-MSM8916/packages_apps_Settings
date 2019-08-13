@@ -19,6 +19,12 @@
         android:summary="@string/gaming_mode_speaker_summary"
         android:defaultValue="false" />
 
+    <com.teamone.additions.preference.SystemSettingSwitchPreference
+        android:key="gaming_mode_gestures_toggle"
+        android:title="@string/gaming_mode_gestures_title"
+        android:summary="@string/gaming_mode_gestures_summary"
+        android:defaultValue="false" />
+
      <!-- HeadsUP -->
     <com.teamone.additions.preference.SystemSettingSwitchPreference
         android:key="gaming_mode_headsup_toggle"
