@@ -26,6 +26,7 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.text.TextUtils;
 import android.view.DisplayCutout;
+import com.android.settings.display.OverlayCategoryPreferenceController;
 
 import com.android.settings.R;
 import com.android.settings.core.PreferenceControllerMixin;
@@ -54,8 +55,6 @@ public class EmulateDisplayCutoutPreferenceController extends
     EmulateDisplayCutoutPreferenceController(Context context, PackageManager packageManager,
             OverlayManagerWrapper overlayManager) {
         super(context);
-        mOverlayManager = overlayManager;
-        mPackageManager = packageManager;
         mAvailable = overlayManager != null && getOverlayInfos().length > 0;
     }
 
